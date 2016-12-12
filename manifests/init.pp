@@ -1,4 +1,8 @@
 class hosts {
+  resources {'host':
+    purge => true,
+  }
+
   @@host { $facts['fqdn']:
     ensure       => present,
     host_aliases => $facts['hostname'],
