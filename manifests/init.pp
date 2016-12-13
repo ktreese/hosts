@@ -15,6 +15,4 @@ class hosts {
     ip           => $facts['ipaddress'],
     tag          => '3031',
   }
-
-  Host <<| tag == '3031' |>>
 }
